@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'circular';
+    src: url('fonts/circular.woff2') format('woff2'),
+         url('fonts/circular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #a38441;
+}
+.hide {
+  display: none;
+  user-select: none;
+}
+
+.hide::selection {
+  background: transparent;
+}
+.nospace {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  font-family: 'circular';
+  font-size: 20px;
+  position: fixed;
+  left: 800px;
+  top: 75px;
+
+}
+
+h1 {
+  text-align: center; 
+  font-size: 75px;
+  font-family: 'circular';
+  position: fixed;
+  left: 770px;
+  top: -50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'circular';
+}
+
+
+#circle {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: red;
+  top: 250px;
+}
+
+#triangle {
+  width: 0px;
+  height: 0px;
+  top: 25px;
+  border-style: inset;
+  border-width: 0 130px 250px 130px;
+  border-color: transparent transparent aqua transparent;
+  float: left;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+#triangle2 {
+  text-align: center;
+  top: 170px;
+  left: -90px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+
+#rectangle {
+  width: 400px;
+  height: 250px;
+  background-color: green;
+  left: 500px;
+  position: absolute;
+  border: 1px solid black;
+}
+
+#square {
+  width: 250px;
+  height: 250px;
+  background-color: yellow;
+  position: absolute;
+  left: 500px;
+  top: 3px;
+  border: 1px solid black;
+}
+
+#parallelogram {
+  width: 400px;
+  height: 250px;
+  transform: skew(20deg);
+  background-color: purple;
+  position: absolute;
+  left: 1100px;
+  border: 1px solid black;
+}
+
+#trapezoid {
+  height: 0px;
+  width: 250px;
+  border-bottom: 250px solid gray;
+	border-left: 125px solid transparent;
+	border-right: 125px solid transparent;
+  position: absolute;
+  top: 550px;
+}
+
+#pentagon {
+  position: absolute;
+  height: 0px;
+  width: 150px;
+  border-top: 150px solid pink;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  top: 700px;
+  left: 550px;
+  }
+
+#pentagon:before {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  border-bottom: 145px solid pink;
+  border-left: 145px solid transparent;
+  border-right: 145px solid transparent;
+  bottom: 150px;
+  left: -70px;
+}
+  
+#pentagon2 {
+  text-align: center;
+  top: -125px;
+  left: -35px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+
+#hexagon {
+  position: absolute;
+  height: 0px;
+  width: 150px;
+  border-top: 150px solid orange;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  top: 770px;
+  left: 870px;
+}
+
+#hexagon:before {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 150px;
+  border-bottom: 150px solid orange;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  bottom: 150px;
+  left: -100px;
+}
+
+#hexagon2 {
+  text-align: center;
+  top: -200px;
+  left: -35px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+
+#octagon {
+  width: 100px;
+  height: 150px;
+  background: white;
+  position: absolute;
+  left: 1170px;
+  top: 50px;
+}
+#octagon:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid white;
+  border-left: 29px solid #a38441;
+  border-right: 29px solid #a38441;
+}
+#octagon:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid white;
+  border-left: 29px solid #a38441;
+  border-right: 29px solid #a38441;
+}
+
+#octagon2 {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+}
+
+#octagon3 {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  color: white;
+}
+
+#rectangle2 {
+  width: 55px;
+  height: 99px;
+  background-color: white;
+  left: 1270px;
+  top: 72px;
+  position: absolute;
+}
